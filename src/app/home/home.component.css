@@ -1,0 +1,27 @@
+.body {
+    background-color: rgb(0, 117, 146);
+    position: fixed;
+    height: 95%;
+    width: 100%;
+    background-image: url('/assets/img/ball.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+}
+
+.toggle-bienvenue {
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    font-size: 3em;
+}
+
+span {
+    color: white;
+}

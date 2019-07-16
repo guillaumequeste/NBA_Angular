@@ -1,0 +1,10 @@
+<div class="body">
+    <div class="toggle-button">
+        <button (click)="isHidden = !isHidden">Click</button>
+    </div>
+    <div class="toggle-bienvenue">
+        <div *ngIf="!isHidden">
+            <span>Bienvenue !!</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+.body {
+    background-color: rgb(0, 117, 146);
+    min-height: 95vh;
+    width: 100%;
+    padding: 5%;
+}
+
+.conference {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    color: rgb(255, 222, 32);
+}
+
+.division {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+p {
+    color: white;
+}
+
+img {
+    width: 5%;
+}

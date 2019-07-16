@@ -1,0 +1,15 @@
+<div class="body">
+    <div class="row">
+        <div *ngFor="let player of players" class="player">
+            <div class="card" style="width: 18rem;">
+                <img [src]="player.picture" class="card-img-top" (click)="selectPlayer(player)">
+                <div class="card-body">
+                    <div class="card-text">
+                        <p><b>{{ player.firstName }} {{ player.lastName }}</b></p>
+                        <p>{{ player.team }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="body">
+    <div>
+        <a (click)="goBack()" class="retour">Retour</a>
+    </div>
+    <h4 *ngIf="!player" class="rien">Auncun joueur à afficher</h4>
+    <div *ngIf="player">
+        <div class="container">
+            <div class="card mb-3">
+                <img [src]="player.wall" class="card-img-top" style="width: 100%;">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h4>{{ player.firstName }} {{ player.lastName }} <small>({{ player.active }}, {{ player.country }})</small></h4>
+                        <p>{{ player.position }}</p>
+                    </div>
+                    <p class="card-text">Equipe actuelle : {{ player.team }}</p>
+                    <p class="card-text">Date et lieu de naissance : {{ player.dateOfBirth }} à {{ player.placeOfBirth }}</p>
+                    <p>Taille : {{ player.height }} cm</p>
+                    <p>Poids : {{ player.weight }} kg</p>
+                    <p>Draft : {{ player.draft }}</p>
+                    <h2>{{ player.number }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
